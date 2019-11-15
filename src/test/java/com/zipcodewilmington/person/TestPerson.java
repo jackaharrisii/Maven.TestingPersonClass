@@ -12,6 +12,9 @@ public class TestPerson {
         // Given
         String expectedName = "";
         Integer expectedAge = Integer.MAX_VALUE;
+        String expectedEyeColor = "";
+        String expectedHairColor = "";
+        Integer expectedHeight = Integer.MAX_VALUE;
 
         // When
         Person person = new Person();
@@ -19,9 +22,16 @@ public class TestPerson {
         // Then
         String actualName = person.getName();
         Integer actualAge = person.getAge();
+        String actualEyeColor = person.getEyeColor();
+        String actualHairColor = person.getHairColor();
+        Integer actualHeight = person.getHeight();
 
         Assert.assertEquals(expectedName, actualName);
         Assert.assertEquals(expectedAge, actualAge);
+        Assert.assertEquals(expectedEyeColor, actualEyeColor);
+        Assert.assertEquals(expectedHairColor, actualHairColor);
+        Assert.assertEquals(expectedHeight, actualHeight);
+
     }
 
     @Test
